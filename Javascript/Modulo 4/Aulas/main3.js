@@ -1,0 +1,10 @@
+axios.get('https://api.github.com/users/matthcarter777') 
+.then(function(response)
+    {
+        console.log(response.data.login)
+        console.log(response.data.login)
+    })
+.catch(function(error)
+    {
+        console.log(error)
+    });

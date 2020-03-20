@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Curso JS</title>
+    </head>
+    <body>
+        <script>
+
+            function retornaUsuario(usuarios){
+
+                for ( i= 0; i < usuarios.length ; i ++ ){ 
+                    console.log('O', usuarios[i].nome ,'e tem as habilidades:', usuarios[i].habilidade.join());
+                }
+
+            }
+
+            var usuarios = [
+            {
+                nome: 'Diego',
+                habilidade: ["JS","ReactJS","Redux"]
+            },
+            {
+                nome: 'Gabriel',
+                habilidade: ["Vue","Ruby","Elixir"]
+            }];
+
+            retornaUsuario(usuarios);
+
+
+   
+
+        </script>
+    </body>
+</html>

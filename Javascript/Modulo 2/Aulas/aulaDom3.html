@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Curso JS</title>
+    </head>
+    <body>
+
+        <div id="app">
+            <input name="nome"/>
+        </div>
+
+        <script>
+            //criar elemento na DOM
+            var linkElement = document.createElement('a');
+
+            //Adicionar tipo ao novo atributo
+            linkElement.setAttribute('href', 'http://google.com');
+
+            //Criar Texto para o novo atributo
+            var textElement = document.createTextNode('Link para o google');
+            linkElement.appendChild(textElement);
+
+            //Adicionar texto ao campo criado
+            var containerElement = document.querySelector('#app');
+            containerElement.appendChild(linkElement);
+
+            //Remover elemento da DOM
+            var inputElement = document.querySelector('input[name=nome]');
+            containerElement.removeChild(inputElement);
+        </script>
+    </body>
+</html>

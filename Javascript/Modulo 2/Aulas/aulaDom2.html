@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Curso JS</title>
+    </head>
+    <body>
+
+        <div id="app">
+            <label>Insira um nome</label>
+            <input type="text" name="nome" id="nome" class="nome"/>
+            <button class="botao">Adicionar</button>
+        </div>
+
+        <script>
+            //var inputElement = document.getElementById('nome');                //#busca o campo pelo id 
+            //var inputElement = document.getElementsByTagName('input')[0];      //#buscar um especifico no vetor formado
+            //var inputElement = document.getElementsByTagName('input');         //#buscar todos os campos tipo imput e formar um vetor 
+            //var inputElement = document.getElementsByClassName('nome');        //#busca elemmentos pela classe e retorna um vetor
+            //var inputElement = document.querySelector('body div#app input');   //#busca dentro da DOM pelas tags
+            //var inputElement = document.querySelector('input[name=nome]');     //#busca dentro da DOM uma propriedade pelo elemento
+            //var inputElement = document.querySelector('input');                //#busca dentro da DOM e retorna o primeiro campo do tipo input
+            //var inputElement = document.querySelectorAll('input');             //#busca dentro da DOM e retorna todos os campos do tipo input
+            
+            var inputElement = document.querySelector('input[name=nome]');       //#busca dentro da DOM uma propriedade pelo elemento
+            var btnElement = document.querySelector('button.botao');             //#busca dentro da DOM pelo tipo botao e a classe
+
+            btnElement.onclick = function(){
+                var text = inputElement.value;
+
+                alert(text);
+            }
+
+
+            console.log(inputElement);
+        </script>
+    </body>
+</html>

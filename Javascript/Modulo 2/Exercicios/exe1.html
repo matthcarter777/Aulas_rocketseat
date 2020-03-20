@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Curso JS</title>
+    </head>
+    <body>
+
+        <div id="app">
+            <button class="btnCriar"  id="btnCriar">Criar Quadrado</button>
+            <div class="box" id="box"></div>
+        </div>
+
+        <script>
+
+            function createSquare(){
+
+                var squareElement = document.createElement('div');
+
+                squareElement.setAttribute('class', 'box');
+
+                squareElement.style.width = 100;
+                squareElement.style.height = 100;
+                squareElement.style.backgroundColor = '#FF0000';
+                squareElement.style.marginBottom = 10;
+
+                var box = document.querySelector('.box');
+
+                box.appendChild(squareElement);
+            }
+
+            btnCriar.onclick = function(){
+                createSquare();
+            }
+
+        </script>
+    </body>
+</html>

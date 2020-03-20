@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Curso JS</title>
+    </head>
+    <body>
+        <div id="app">
+            <ul>
+            </ul>
+        </div>
+        <script>
+            var nomes = ["Diego", "Gabriel", "Lucas"];
+            var listaElement = document.querySelector('ul');
+
+            for(nome of nomes){
+                var liElment = document.createElement('li');
+                var textElement = document.createTextNode(nome);
+                liElment.appendChild(textElement);
+                listaElement.appendChild(liElment);
+            }
+        </script>
+    </body>
+</html>
